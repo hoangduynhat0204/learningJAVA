@@ -1,0 +1,9 @@
+entity\BookDetailsEntity.class
+repository\BookDetailsRepository.class
+entity\CategoryEntity.class
+repository\CategoryRepository.class
+repository\BookRepository.class
+app\Main.class
+entity\BookEntity.class
+service\BookService.class
+config\SpringConfig.class

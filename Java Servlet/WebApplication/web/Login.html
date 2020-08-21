@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <h2>Novell Service Login</h2>
+            <table>
+                <tr>
+                    <td><label>Username: </label></td>
+                    <td><input type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <td><label>Password: </label></td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td><label>City of Employment: </label></td>
+                    <td><input type="text" name="city"></td>
+                </tr>
+                <tr>
+                    <td><label>Web Server: </label></td>
+                    <td><select>
+                            <option> --Choose a web server-- </option>
+                            <option value="Hanoi">Hanoi</option>
+                            <option value="hochiminh">Ho Chi Minh</option>
+                            <option value="dannag">Da Nang</option>
+                            <option value="nhatrang">Nha Trang</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><label>Please specify Your role</label></td>
+                    <td><input type="radio" id="admin" name="admin" value="admin">Admin<br/>
+                        <input type="radio" id="engineer" name="engineer" value="engineer">Engineer<br/>
+                        <input type="radio" id="manager" name="manager" value="manager">Manager<br/>
+                        <input type="radio" id="guest" name="guest" value="guest">Guest<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Single Sign-on to the following</label></td>
+                    <td>
+                        <input type="checkbox" name="mail" value="mail">Mail<br/>
+                        <input type="checkbox" name="payroll" value="payroll">Payroll<br/>
+                        <input type="checkbox" name="seflservice" value="seflservice">Self-service<br/>
+                    </td>
+                </tr>
+            </table>
+            <div>
+                <input type="submit" name="Log in" value="Login">
+                <input type="reset" name="Reset" value="Reset">
+            </div>
+
+        </div>
+    </body>
+</html>

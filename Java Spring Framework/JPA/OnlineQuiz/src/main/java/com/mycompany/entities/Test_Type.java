@@ -1,0 +1,47 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.mycompany.entities;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+/**
+ *
+ * @author Hoang Duy Nhat
+ */
+@Entity
+@Table(name = "test_type")
+public class Test_Type {
+     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int test_type_id;
+     
+    private String test_type_name;
+
+    public Test_Type() {
+    }
+
+    public int getTest_type_id() {
+        return test_type_id;
+    }
+
+    public void setTest_type_id(int test_type_id) {
+        this.test_type_id = test_type_id;
+    }
+
+    public String getTest_type_name() {
+        return test_type_name;
+    }
+
+    public void setTest_type_name(String test_type_name) {
+        this.test_type_name = test_type_name;
+    }
+    
+    
+}
